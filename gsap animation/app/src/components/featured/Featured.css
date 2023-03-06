@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syncopate:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;0,6..96,900;1,6..96,400;1,6..96,500;1,6..96,600;1,6..96,700;1,6..96,800;1,6..96,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  background-color: #f5f0ec;
+}
+
+body {
+  overflow: hidden;
+}
+
+.featured-section {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+.featured-section img {
+  -webkit-clip-path: inset(100% 0% 0% 0%);
+          clip-path: inset(100% 0% 0% 0%);
+  transition: -webkit-clip-path 1s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: clip-path 1s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: clip-path 1s cubic-bezier(0.77, 0, 0.175, 1), -webkit-clip-path 1s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.featured-section img.is-reveal {
+  -webkit-clip-path: inset(0% 0% 0% 0%);
+          clip-path: inset(0% 0% 0% 0%);
+}
+.featured-section h6 {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.featured-section .featured-row-layout,
+.featured-section .featured-column-layout {
+  display: grid;
+  gap: 10px;
+}
+.featured-section .featured-row-layout {
+  grid-template-rows: repeat(2, auto);
+}
+.featured-section .featured-row-layout img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.featured-section .featured-column-layout {
+  grid-template-columns: 100px auto;
+  align-items: flex-end;
+}
+.featured-section .featured-column-layout img {
+  width: 100%;
+  height: 125vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.featured-section .featured-column-layout h6 {
+  transform: translateX(100%) rotate(-90deg);
+  transform-origin: left bottom;
+  justify-self: self-end;
+}/*# sourceMappingURL=Featured.css.map */

@@ -1,0 +1,35 @@
+@import "../../App.scss";
+
+.header-container {
+  position: relative;
+  .header-menu {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    letter-spacing: 1px;
+    font-family: "Syncopate", sans-serif;
+    color: #626262;
+    text-transform: uppercase;
+    font-weight: 600;
+    li {
+      margin: 10px 0;
+      list-style: none;
+    }
+  }
+  #header-text {
+    font-size: 15vw;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Bai Jamjyree", sans-serif;
+    font-weight: 600;
+  }
+}
+
+.lineParent{
+overflow: hidden;
+}
+.lineChildren{
+transform: translate(0,500px);
+transition: 0.5s ease-in-out;
+}

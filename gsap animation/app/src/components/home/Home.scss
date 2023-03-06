@@ -1,0 +1,41 @@
+@import "../../App.scss";
+.main-container {
+    padding: 0 3vw;
+  }
+  
+  section {
+    padding: 100px 0;
+    .section-header {
+      margin-bottom: 50px;
+    }
+  }
+  .loader-wrapper{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #191919;
+  color: #dbd8d6;
+  h1{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: "Bai Jamjuree" , sans-serif;
+  font-weight: 600;
+  }
+  h2{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: "Bodoni Moda" , sans-serif;
+  font-style: italic;
+  margin-top: 10px;
+  }
+  }
+  .absolute{
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: black;
+z-index: 1;
+}
